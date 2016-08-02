@@ -1,0 +1,131 @@
+1.19 pic ratio
+
+
+e1e1e1  search border
+ffffff 
+ffffff
+
+http://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow
+did not work...
+
+e4e4e4 inside  e4e4e4
+f6f6f6 outside f6f6f6
+http://meyerweb.com/eric/tools/color-blend/#E4E4E4:F6F6F6:1:hex
+http://stackoverflow.com/questions/19463904/css-double-border-with-different-color
+
+http://stackoverflow.com/questions/11178946/how-to-create-a-double-bottom-border-in-css
+
+
+slider
+http://getbootstrap.com/2.3.2/javascript.html#carousel
+http://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+
+
+Fonts
+search		BebasNeue
+header		BebasNeue
+bigSLider 	BebasNeue - header, OpenSans - par, BebasNeue - shop now btn
+smallSlider	BebasNeue 
+Featured	BebasNeue 
+productList	BebasNeue 
+bottomNav 	BebasNeue - header, OpenSans - lists 
+footer		OpenSans 
+
+
+Problems
+Fucking problem. In navigation links (seems like that) have fucking margin on the right. How to remove? !important did not work
+No. padding
+
+What is all the fucking font inheritance shit about? Font are not inherited form body nor from divs not from fucking bootstrap css wtf?
+
+Cowhide 166px wide psd; 151px site
+
+Position of .carousel-control does not work in Firefox
+
+Wtf is going on with different heights of borders
+small slider dividers options:
+1) divs in between
+2) borders on the right (the most sensible) and it was used too on the site
+
+Properties that adjust border height:
+.borderSmall{padding-top: 2.1%; padding-bottom: 1%;}
+.thirdItem{padding-top: 2.1%;  padding-bottom: 1%;}
+#featured{margin-top:3.5%;}
+
+Properties to contol horizontal alingn of the elments in Small SLider 
+.textFloatR{float: right; padding-right: 100px;}
+.SSImage{margin-left: 50px;}
+
+если сделать перелистывание по три элемента, то можно сдлать центральный в соответсвии с маекетом (в нем больше расстояние м/у картинкой и текстом)
+
+http://forums.hostsearch.com/showthread.php?8343-Why-does-min-width-never-work
+
+SS items appearing wrong 
+I decreased the default width of owl item
+
+
+
+Work scope.
+General:	
+- arrow images SS, make their bg transparent
+
+	
+Adaptive:
+- Do smth about items displaying. Aceess owl property scrollperPage at certain windo width 
+- menu reappering
+
+
+
+DONE
+- fix ss arrows white bg
+- x scroll appearing	done but what's the cause?
+- ss borders fuck up with smaller width fixed
+
+
+Недочеты:
+- not precise positioning of SS elements
+
+
+
+PSD X-coord 34px center in Pixel Perfect
+можно ориентироваться по футболке, наверное делать отступы по краям (либо увеличивать spacing между элементами)
+
+
+
+width nav 1264px
+https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+
+
+
+
+
+SS psd height: 190px	site 187px
+#smallSLider height:140px 
+
+
+
+.Shape_3_copy {
+  background-color: rgb( 219, 219, 219 );
+  position: absolute;
+  left: 1215px;
+  top: 615px;
+  width: 29px;
+  height: 88px;
+  z-index: 50;
+}
+
+
+
+
+OPtions to solve ss problem
+what I've tried
+(set it to false)
+this ain't working
+	if($(window).width() < 1050) {
+		owlCarousel.scrollPerPage = false;
+		var one = "less than 1050"; 
+	}
+and owlCarousel is not defined
+Options:
+- hide/show border with jquery and scroll one item
+- use old owl (as in mobile centre)
