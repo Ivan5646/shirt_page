@@ -162,7 +162,6 @@ a.productBuy:hover{text-decoration: none; background-color:#ddd; color:#3cc395; 
 
 /* style for Firefox only */
 @-moz-document url-prefix(){
-	h1{color: red;}
 	/* need to inherit or use the same position settings for .right .carousel-control from bootstrap  */
 	.carousel-control.right {
     right: 0px;
